@@ -333,7 +333,7 @@ bool32_t __stdcall SRegSaveValue(char *subkey, char *value_name, uint32_t flags,
 /// made up of 4 ints describing the left, top, right, and bottom coordinates 
 /// of the area to be used for the new image. 
 /// The same functionality can be achieved by passing a pointer to a 1D array of 4 ints.
-bool32_t __stdcall STransCreateI(void *pBuffer, int width, int height, int bpp, int srcQuad, int bufferSize, HANDLE *phTransOut);
+bool32_t __stdcall STransCreateI(void *pBuffer, int width, int height, int bpp, QUAD *srcQuad, int bufferSize, HANDLE *phTransOut);
 
 // === [ SVid ] ================================================================
 
