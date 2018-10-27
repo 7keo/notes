@@ -321,6 +321,20 @@ bool32_t __stdcall SRegSaveString(char *sub_key, char *value_name, uint32_t flag
 /// SRegSaveValue saves an integer value to the given registry key.
 bool32_t __stdcall SRegSaveValue(char *subkey, char *value_name, uint32_t flags, int value);
 
+// === [ STrans] ================================================================
+
+/// address: ???
+/// ordinal: 433
+///
+/// TODO: find address
+///
+/// STransCreateI creates an image from a given buffer, and sets the handle to it in the last argument.
+/// The 5th arguement is a pointer to a quad structure
+/// made up of 4 ints describing the left, top, right, and bottom coordinates 
+/// of the area to be used for the new image. 
+/// The same functionality can be achieved by passing a pointer to a 1D array of 4 ints.
+bool32_t __stdcall STransCreateI(void *pBuffer, int width, int height, int bpp, int srcQuad, int bufferSize, HANDLE *phTransOut);
+
 // === [ SVid ] ================================================================
 
 /// address: 0x469900
